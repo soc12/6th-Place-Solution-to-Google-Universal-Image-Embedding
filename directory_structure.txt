@@ -1,0 +1,7 @@
+.
+./comp_dir
+./comp_dir/submissions
+./comp_dir/models
+./comp_dir/checkpoints
+./comp_dir/pca
+./comp_dir/data
