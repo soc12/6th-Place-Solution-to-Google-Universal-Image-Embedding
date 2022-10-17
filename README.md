@@ -1,4 +1,4 @@
-# 6th Solution in Google Universal Image Embedding  
+# 6th Solution to Google Universal Image Embedding  
 
 ## Data Setup 
 
