@@ -1,6 +1,8 @@
 # 6th Solution in Google Universal Image Embedding  
 
-## DATA SETUP 
+## Data Setup 
+
+Download the following datasets
 
 Data folder → Corresponding dataset [link]
 
@@ -19,7 +21,9 @@ in-shop →  In-shop https://drive.google.com/drive/folders/0B7EVK8r0v71pVDZFQXR
 met → MET artwork dataset http://cmp.felk.cvut.cz/met/  
 130k_kaggle → 130k public dataset from kaggle https://www.kaggle.com/datasets/rhtsingh/130k-images-512x512-universal-image-embeddings  
 
-For gld, gldv2 and ss we provide the dataset link that have been uploaded to kaggle https://www.kaggle.com/datasets/socratis/modified-datasets  
+<b>!!!!</b> For <b>gld</b>, <b>gldv2</b> and <b>ss</b> we provide the dataset link that have been uploaded to kaggle https://www.kaggle.com/datasets/socratis/modified-datasets to avoid any confusion.
+
+Place them into ```ROOT_PATH/data```
 
 There is a train.csv which contains the paths, the original labels, the encoded labels, the set (train or valid) and the category of labels (apparel, landmark, food etc.)  
 
@@ -27,7 +31,7 @@ The train.csv file contains all the images that we used for training. By downloa
 
 In case there are problems for the data placement, we have also kept the original id from each source dataset in the column ‘orig_label’ preceded by the folder’s or category’s name and the original names. For example,  the label fashion200k_90037639 refers to the original id 90037639 of the source dataset. The only exceptions are the Google Landmarks dataset, which uses the original id, and the Food-101 and Storefronts datasets, which utilize the folder’s name.
 
-# Environment setup
+## Environment setup
 ```
 #using conda  
 conda create -n <environment-name> --file req.txt  
@@ -35,10 +39,8 @@ conda create -n <environment-name> --file req.txt
 pip install -r requirements.txt  
 ```
 
-# MODEL BUILD (Reproduce the solution)
-
-Train the model
-    a) expect this to run 14 hours
-
-## train model (overwrites models, pca, submissions in comp_dir directory)
+## Train model
+```
+cd comp_dir
 python train.py
+```
