@@ -23,7 +23,7 @@ met → MET artwork dataset http://cmp.felk.cvut.cz/met/
 
 <b>!!!!</b> For <b>gld</b>, <b>gldv2</b> and <b>ss</b> we provide the dataset link that have been uploaded to kaggle https://www.kaggle.com/datasets/socratis/modified-datasets to avoid any confusion.
 
-Place them into ```ROOT_PATH/data```
+Place them into ```comp_dir/data```
 
 There is a train.csv which contains the paths, the original labels, the encoded labels, the set (train or valid) and the category of labels (apparel, landmark, food etc.)  
 
